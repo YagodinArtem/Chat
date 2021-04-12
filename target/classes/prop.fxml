@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
+   <children>
+      <TextArea fx:id="chatWindow" editable="false" prefHeight="550.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </TextArea>
+      <HBox prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="inputLine" onKeyPressed="#enter" minHeight="50.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+
+               <tooltip>
+                  <Tooltip text="Введите сообщение" />
+               </tooltip>
+            </TextField>
+            <Button minHeight="50.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c">
+               <HBox.margin>
+                  <Insets left="30.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

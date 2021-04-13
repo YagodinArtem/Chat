@@ -4,36 +4,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
-   <children>
-      <TextArea fx:id="chatWindow" editable="false" prefHeight="550.0" prefWidth="200.0">
-         <VBox.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </VBox.margin>
-         <padding>
-            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-         </padding>
-      </TextArea>
-      <HBox prefHeight="25.0" prefWidth="200.0">
-         <children>
-            <TextField fx:id="inputLine" onKeyPressed="#enter" minHeight="50.0" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets left="5.0" />
-               </HBox.margin>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
+   <bottom>
+      <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER_RIGHT">
+         <items>
+            <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0">
 
-               <tooltip>
+                           <tooltip>
                   <Tooltip text="Введите сообщение" />
                </tooltip>
             </TextField>
-            <Button minHeight="50.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c">
-               <HBox.margin>
-                  <Insets left="30.0" right="5.0" />
-               </HBox.margin>
-            </Button>
-         </children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c" SplitPane.resizableWithParent="false" />
+         </items>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </SplitPane>
+   </bottom>
+   <center>
+      <TextArea fx:id="chatWindow" editable="false" prefHeight="550.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <padding>
-            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
-      </HBox>
-   </children>
-</VBox>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TextArea>
+   </center>
+</BorderPane>

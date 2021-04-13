@@ -31,13 +31,10 @@ public class Controller {
     }
 
     public void sendMessage(MouseEvent event) {
-        if (inputLine.getText() != null
-                && !inputLine.getText().equals("")) { addMsgToChat(); }
+        if (inputLine.getText() != null && !inputLine.getText().equals("")) { addMsgToChat(); }
     }
 
     public void enter(KeyEvent keyEvent) {
-        if (keyEvent.getCode() == KeyCode.ENTER
-                && inputLine.getText() != null
-                && !inputLine.getText().equals("")) { addMsgToChat(); }
+        if (keyEvent.getCode() == KeyCode.ENTER && inputLine.getText() != null && !inputLine.getText().equals("")) { addMsgToChat(); }
     }
 }

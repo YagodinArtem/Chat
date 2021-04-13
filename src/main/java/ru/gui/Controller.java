@@ -31,10 +31,18 @@ public class Controller {
     }
 
     public void sendMessage(MouseEvent event) {
-        if (inputLine.getText() != null && !inputLine.getText().equals("")) { addMsgToChat(); }
+        if (isMsgContainChars()) { addMsgToChat(); }
     }
 
     public void enter(KeyEvent keyEvent) {
-        if (keyEvent.getCode() == KeyCode.ENTER && inputLine.getText() != null && !inputLine.getText().equals("")) { addMsgToChat(); }
+        if (keyEvent.getCode() == KeyCode.ENTER && isMsgContainChars()) { addMsgToChat(); }
+    }
+
+    public boolean isMsgContainChars() {
+        if (!inputLine.getText().equals("") && inputLine.getText() != null) {
+            char[] chars = inputLine.getText().toCharArray();
+            for (char c : chars) if (c != ' ') return true;
+        }
+        return false;
     }
 }

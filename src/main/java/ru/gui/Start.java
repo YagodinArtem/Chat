@@ -18,7 +18,6 @@ public class Start extends Application {
         Parent root = loader.load();
         primaryStage.setTitle("Chat 1.0");
 
-
         primaryStage.setScene(new Scene(root
                 , screenSize.getWidth() / 3.5
                 , screenSize.getHeight() / 1.5));

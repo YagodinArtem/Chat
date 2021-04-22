@@ -7,18 +7,19 @@
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
    <bottom>
       <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER_RIGHT">
-         <items>
-            <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0">
-
-                           <tooltip>
-                  <Tooltip text="Введите сообщение" />
-               </tooltip>
-            </TextField>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c" SplitPane.resizableWithParent="false" />
-         </items>
          <BorderPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
          </BorderPane.margin>
+         <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                    minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0">
+
+            <tooltip>
+               <Tooltip text="Введите сообщение"/>
+            </tooltip>
+         </TextField>
+         <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0"
+                 mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c"
+                 SplitPane.resizableWithParent="false"/>
       </SplitPane>
    </bottom>
    <center>

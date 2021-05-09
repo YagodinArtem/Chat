@@ -1,0 +1,5 @@
+2021/05/07 14:27:44 Для смены ника напишите в чат /nick <login password newNick>
+2021/05/07 14:27:47 suka: kto ya
+2021/05/07 14:27:55 suka: 4to za nik takoi merzkii
+2021/05/07 14:27:56 suka: poka
+2021/05/07 14:51:07 Для смены ника напишите в чат /nick <login password newNick>

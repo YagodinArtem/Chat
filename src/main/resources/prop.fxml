@@ -4,52 +4,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<<<<<<< HEAD
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
-   <children>
-      <TextArea fx:id="chatWindow" editable="false" focusTraversable="false" wrapText="true" prefHeight="550.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-=======
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gui.Controller">
-   <bottom>
-      <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER_RIGHT">
-         <BorderPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
-         </BorderPane.margin>
-         <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                    minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0">
+    <bottom>
+        <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER_RIGHT">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </BorderPane.margin>
+            <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                       minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0">
 
-            <tooltip>
-               <Tooltip text="Введите сообщение"/>
-            </tooltip>
-         </TextField>
-         <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0"
-                 mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c"
-                 SplitPane.resizableWithParent="false"/>
-      </SplitPane>
-   </bottom>
-   <center>
-      <TextArea fx:id="chatWindow" editable="false" prefHeight="550.0" prefWidth="200.0" BorderPane.alignment="CENTER">
->>>>>>> 68772232a71e7f711b31417e5f74e0d4059ff1b8
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-      </TextArea>
-      <HBox>
-         <children>
-            <TextField fx:id="inputLine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="200.0" onKeyPressed="#enter" prefHeight="50.0" prefWidth="378.0" HBox.hgrow="ALWAYS">
-               <tooltip>
-                  <Tooltip text="Введите сообщение" />
-               </tooltip>
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
+                <tooltip>
+                    <Tooltip text="Введите сообщение"/>
+                </tooltip>
             </TextField>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-   </children>
-</VBox>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="50.0" minHeight="50.0" minWidth="50.0"
+                    mnemonicParsing="false" onMouseClicked="#sendMessage" text="Send" textFill="#9a4c4c"
+                    SplitPane.resizableWithParent="false"/>
+        </SplitPane>
+    </bottom>
+    <center>
+        <TextArea fx:id="chatWindow" editable="false" prefHeight="550.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </TextArea>
+    </center>
+</BorderPane>
